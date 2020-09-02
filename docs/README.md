@@ -1,6 +1,6 @@
 # Abp.AspNetCore.Mvc.UI.Theme.LYear
 
-A simple ABP Mvc UI theme.
+A simple ABP MVC UI theme.
 
 ## Online Demo 
 
