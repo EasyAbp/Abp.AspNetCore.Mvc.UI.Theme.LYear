@@ -1,0 +1,22 @@
+﻿@using Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.LanguageSwitch
+@using Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Toolbar.UserMenu
+<nav class="navbar navbar-default">
+    <div class="topbar">
+
+        <div class="topbar-left">
+            <div class="lyear-aside-toggler">
+                <span class="lyear-toggler-bar"></span>
+                <span class="lyear-toggler-bar"></span>
+                <span class="lyear-toggler-bar"></span>
+            </div>
+        </div>
+
+        <ul class="topbar-right">
+            @(await Component.InvokeAsync<UserMenuViewComponent>())
+            <!--语言切换-->
+            @(await Component.InvokeAsync<LanguageSwitchViewComponent>())
+            <!--语言切换-->
+        </ul>
+
+    </div>
+</nav>

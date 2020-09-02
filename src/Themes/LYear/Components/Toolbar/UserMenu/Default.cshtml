@@ -1,0 +1,45 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using Volo.Abp.MultiTenancy
+@using Volo.Abp.UI.Navigation
+@using Volo.Abp.Users
+@using Localization.Resources.AbpUi
+@inject ICurrentUser CurrentUser
+@inject ICurrentTenant CurrentTenant
+@inject IHtmlLocalizer<AbpUiResource> L
+@model ApplicationMenu
+
+<li class="dropdown">
+    @{
+        var userName = CurrentUser.TenantId != null ? $"{CurrentTenant.Name}\\{CurrentUser.UserName}" : CurrentUser.UserName;
+    }
+
+    <a href="javascript:void(0)" data-toggle="dropdown">
+        <span>@userName<span class="caret"></span></span>
+        <img class="img-avatar img-avatar-48 m-r-10" src="/themes/lyear/assets/images/users/avatar.jpg" alt="@userName" />
+    </a>
+    @if (Model.Items.Any())
+    {
+
+        <ul class="dropdown-menu dropdown-menu-right">
+            @foreach (var menuItem in Model.Items)
+            {
+                var elementId = string.IsNullOrEmpty(menuItem.ElementId) ? string.Empty : $"id={menuItem.ElementId}";
+                var cssClass = string.IsNullOrEmpty(menuItem.CssClass) ? string.Empty : menuItem.CssClass;
+                var disabled = menuItem.IsDisabled ? "disabled" : string.Empty;
+                var url = string.IsNullOrEmpty(menuItem.Url) ? "#" : Url.Content(menuItem.Url);
+                <li class="@cssClass @disabled">
+                    <a href="@url" target="@menuItem.Target" @Html.Raw(elementId)>
+                        @if (menuItem.Icon != null)
+                        {
+                            if (menuItem.Icon.StartsWith("fa"))
+                            {
+                                <i class="@menuItem.Icon.Replace("fa ", "fas ")"></i>
+                            }
+                        }
+                        @menuItem.DisplayName
+                    </a>
+                </li>
+            }
+        </ul>
+    }
+</li>

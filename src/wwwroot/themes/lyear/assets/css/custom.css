@@ -1,0 +1,34 @@
+﻿.dataTables_scrollBody {
+    min-height: 248px;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 1;
+}
+
+.modal-backdrop.show {
+    display: block !important;
+    opacity: .5;
+}
+
+.modal-dialog {
+    margin-top: 10%;
+}
+
+.tab-pane {
+    opacity: 1;
+}
+
+.col-md-6.mx-auto {
+    margin-right: auto !important;
+    width: 100%;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+    float: none;
+}

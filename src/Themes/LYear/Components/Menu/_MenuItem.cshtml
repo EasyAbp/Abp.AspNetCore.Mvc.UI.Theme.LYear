@@ -1,0 +1,35 @@
+﻿@using Volo.Abp.AspNetCore.Mvc.UI.Layout
+@using Volo.Abp.UI.Navigation
+@using Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Menu
+@inject IPageLayout PageLayout
+@model ApplicationMenuItem
+@{
+    var elementId = string.IsNullOrEmpty(Model.ElementId) ? string.Empty : $"id={Model.ElementId}";
+    var cssClass = string.IsNullOrEmpty(Model.CssClass) ? string.Empty : Model.CssClass;
+    var disabled = Model.IsDisabled ? "disabled" : string.Empty;
+    var active = PageLayout.Content.MenuItemName == Model.Name ? "active" : "";
+    var childActive = LeftNavbarMenuViewComponent.ChildActive(Model.Items, PageLayout.Content.MenuItemName) ? "active" : "";
+    var url = string.IsNullOrEmpty(Model.Url) ? "#" : Url.Content(Model.Url);
+}
+
+@if (Model.IsLeaf)
+{
+    if (Model.Url != null)
+    {
+        <li> <a href="@url"><i class="@LeftNavbarMenuViewComponent.ReWriteIcon(Model.Name, Model.Icon)"></i> <span>@Model.DisplayName</span></a> </li>
+    }
+}
+else
+{
+    <ul class="nav nav-subnav">
+        <li class="nav-item nav-item-has-subnav">
+            <a href="@url"><i class="@LeftNavbarMenuViewComponent.ReWriteIcon(Model.Name, Model.Icon)"></i> <span>@Model.DisplayName</span></a>
+            <ul class="nav nav-subnav">
+                @foreach (var childMenuItem in Model.Items)
+                {
+                    @await Html.PartialAsync("~/Themes/LYear/Components/Menu/_MenuItem.cshtml", childMenuItem)
+                }
+            </ul>
+        </li>
+    </ul>
+}
