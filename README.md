@@ -14,3 +14,7 @@ We have launched an online demo for this module: [https://lyear.samples.easyabp.
 
 1. Add `DependsOn(typeof(AbpAspNetCoreMvcUiLYearThemeModule))` attribute to configure the module dependencies. ([see how](https://github.com/EasyAbp/EasyAbpGuide/blob/master/How-To.md#add-module-dependencies))
 
+## Reference
+
+This template refers to [Light-Year-Admin-Template](https://gitee.com/yinqi/Light-Year-Admin-Template), see [Light-Year-Admin-Template](https://gitee.com/yinqi/Light-Year-Admin-Template) document for more information.
+
