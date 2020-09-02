@@ -2,7 +2,7 @@
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc.UI.Alerts;
 
-namespace EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.PageAlerts
+namespace EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.PageAlerts
 {
     public class PageAlertsViewComponent : AbpViewComponent
     {

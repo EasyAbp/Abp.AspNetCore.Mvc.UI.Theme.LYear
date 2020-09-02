@@ -1,12 +1,12 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using System.Threading.Tasks;
-using EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Toolbar.UserMenu;
-using EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.LanguageSwitch;
+﻿using System.Threading.Tasks;
+using EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Toolbar.LanguageSwitch;
+using EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Toolbar.UserMenu;
+using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.Toolbars;
 using Volo.Abp.Localization;
 using Volo.Abp.Users;
 
-namespace EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.Toolbars
+namespace EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Toolbars
 {
     public class LYearThemeMainTopToolbarContributor : IToolbarContributor
     {

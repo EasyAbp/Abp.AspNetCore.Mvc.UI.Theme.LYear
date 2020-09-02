@@ -1,5 +1,5 @@
-﻿using EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.Bundling;
-using EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.Toolbars;
+﻿using EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Bundling;
+using EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Toolbars;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.AspNetCore.Mvc.UI.Bundling;
 using Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy;
@@ -10,7 +10,7 @@ using Volo.Abp.AspNetCore.Mvc.UI.Theming;
 using Volo.Abp.Modularity;
 using Volo.Abp.VirtualFileSystem;
 
-namespace EasyAbp.AspNetCore.Mvc.UI.Theme.LYear
+namespace EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear
 {
     [DependsOn(
         typeof(AbpAspNetCoreMvcUiThemeSharedModule),

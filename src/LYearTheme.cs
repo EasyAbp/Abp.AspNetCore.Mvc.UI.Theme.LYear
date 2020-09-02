@@ -1,7 +1,7 @@
 ﻿using Volo.Abp.AspNetCore.Mvc.UI.Theming;
 using Volo.Abp.DependencyInjection;
 
-namespace EasyAbp.AspNetCore.Mvc.UI.Theme.LYear
+namespace EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear
 {
     [ThemeName(Name)]
     public class LYearTheme : ITheme, ITransientDependency

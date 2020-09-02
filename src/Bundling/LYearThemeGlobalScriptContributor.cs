@@ -1,6 +1,6 @@
 ﻿using Volo.Abp.AspNetCore.Mvc.UI.Bundling;
 
-namespace EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.Bundling
+namespace EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Bundling
 {
     public class LYearThemeGlobalScriptContributor : BundleContributor
     {

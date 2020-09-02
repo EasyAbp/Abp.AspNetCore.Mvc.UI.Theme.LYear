@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.UI.Navigation;
 
-namespace EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Menu
+namespace EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Menu
 {
     public class LeftNavbarMenuViewComponent : AbpViewComponent
     {
