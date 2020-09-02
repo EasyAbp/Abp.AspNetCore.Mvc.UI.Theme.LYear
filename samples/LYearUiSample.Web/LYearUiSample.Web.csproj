@@ -41,7 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Abp.AspNetCore.Mvc.UI.Theme.LYear.csproj" />
+    <ProjectReference Include="..\..\src\EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.csproj" />
     <ProjectReference Include="..\LYearUiSample.Application\LYearUiSample.Application.csproj" />
     <ProjectReference Include="..\LYearUiSample.HttpApi\LYearUiSample.HttpApi.csproj" />
     <ProjectReference Include="..\LYearUiSample.EntityFrameworkCore.DbMigrations\LYearUiSample.EntityFrameworkCore.DbMigrations.csproj" />

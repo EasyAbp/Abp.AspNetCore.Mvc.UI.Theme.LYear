@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
 
-namespace Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.TopNavbar
+namespace EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.TopNavbar
 {
     public class TopNavbarViewComponent : AbpViewComponent
     {

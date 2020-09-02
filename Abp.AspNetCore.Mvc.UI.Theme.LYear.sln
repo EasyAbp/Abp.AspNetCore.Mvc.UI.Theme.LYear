@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abp.AspNetCore.Mvc.UI.Theme.LYear", "src\Abp.AspNetCore.Mvc.UI.Theme.LYear.csproj", "{CE9392BE-2391-42CA-A92E-3D73214A8DA4}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{44575307-5F1C-4533-917E-9D7247940A83}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{D9A0FCD4-41E0-4C4C-AD3C-434AD8FC0A3A}"
@@ -43,16 +41,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LYearUiSample.TestBase", "t
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LYearUiSample.Web.Tests", "test\LYearUiSample.Web.Tests\LYearUiSample.Web.Tests.csproj", "{5C04EF1B-CCFE-470E-8AE4-249F8B76762E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyAbp.AspNetCore.Mvc.UI.Theme.LYear", "src\EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.csproj", "{724F39A1-857C-4EF3-928F-16FD5450CF5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CE9392BE-2391-42CA-A92E-3D73214A8DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE9392BE-2391-42CA-A92E-3D73214A8DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE9392BE-2391-42CA-A92E-3D73214A8DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE9392BE-2391-42CA-A92E-3D73214A8DA4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{74D85A19-3B24-4016-A46B-9142D5F4F99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{74D85A19-3B24-4016-A46B-9142D5F4F99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74D85A19-3B24-4016-A46B-9142D5F4F99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -117,12 +113,15 @@ Global
 		{5C04EF1B-CCFE-470E-8AE4-249F8B76762E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C04EF1B-CCFE-470E-8AE4-249F8B76762E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C04EF1B-CCFE-470E-8AE4-249F8B76762E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{724F39A1-857C-4EF3-928F-16FD5450CF5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724F39A1-857C-4EF3-928F-16FD5450CF5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724F39A1-857C-4EF3-928F-16FD5450CF5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724F39A1-857C-4EF3-928F-16FD5450CF5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{CE9392BE-2391-42CA-A92E-3D73214A8DA4} = {44575307-5F1C-4533-917E-9D7247940A83}
 		{74D85A19-3B24-4016-A46B-9142D5F4F99E} = {D9A0FCD4-41E0-4C4C-AD3C-434AD8FC0A3A}
 		{8BA1AA2F-E58A-4490-8D2F-2D00FCE7035B} = {D9A0FCD4-41E0-4C4C-AD3C-434AD8FC0A3A}
 		{78AF7E81-186A-49E9-AA0B-0DA513CD93D3} = {D9A0FCD4-41E0-4C4C-AD3C-434AD8FC0A3A}
@@ -139,6 +138,7 @@ Global
 		{11F39ED2-F474-4DFB-8816-E76B91254685} = {E74C3F8F-36D9-4440-8A96-6B140AD691DB}
 		{5F36F949-A4A8-4C3E-9230-68F7E6D125C6} = {E74C3F8F-36D9-4440-8A96-6B140AD691DB}
 		{5C04EF1B-CCFE-470E-8AE4-249F8B76762E} = {E74C3F8F-36D9-4440-8A96-6B140AD691DB}
+		{724F39A1-857C-4EF3-928F-16FD5450CF5B} = {44575307-5F1C-4533-917E-9D7247940A83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7A0463FA-780D-4A2A-9529-CB303B498728}

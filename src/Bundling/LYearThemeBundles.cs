@@ -1,4 +1,4 @@
-﻿namespace Abp.AspNetCore.Mvc.UI.Theme.LYear.Bundling
+﻿namespace EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.Bundling
 {
     public class LYearThemeBundles
     {

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.UI.Navigation;
 
-namespace Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Menu
+namespace EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Menu
 {
     public class LeftNavbarMenuViewComponent : AbpViewComponent
     {

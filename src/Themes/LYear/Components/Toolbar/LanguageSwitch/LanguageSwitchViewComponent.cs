@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Volo.Abp.AspNetCore.Mvc;
 using Volo.Abp.Localization;
 
-namespace Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.LanguageSwitch
+namespace EasyAbp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.LanguageSwitch
 {
     public class LanguageSwitchViewComponent : AbpViewComponent
     {

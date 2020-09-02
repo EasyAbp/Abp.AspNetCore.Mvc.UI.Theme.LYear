@@ -1,4 +1,4 @@
-using Abp.AspNetCore.Mvc.UI.Theme.LYear;
+using EasyAbp.AspNetCore.Mvc.UI.Theme.LYear;
 using Localization.Resources.AbpUi;
 using LYearUiSample.EntityFrameworkCore;
 using LYearUiSample.Localization;
