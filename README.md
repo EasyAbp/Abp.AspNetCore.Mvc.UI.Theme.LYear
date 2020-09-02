@@ -1,9 +1,10 @@
 # Abp.AspNetCore.Mvc.UI.Theme.LYear
 
-ABP vnext Mvc UI Theme.
+A simple ABP Mvc UI theme.
 
 ## Online Demo 
 
+We have launched an online demo for this module: [https://lyear.samples.easyabp.io](https://lyear.samples.easyabp.io)
 
 ## Installation
 
