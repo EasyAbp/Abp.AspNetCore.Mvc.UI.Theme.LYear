@@ -3,8 +3,20 @@
     <LangVersion>latest</LangVersion>
     <Version>1.0.0</Version>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
-    <AbpProjectType>app</AbpProjectType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>EasyAbp Team</Authors>
+    <Description>A simple ABP Mvc UI theme.</Description>
+    <PackageIconUrl>https://avatars3.githubusercontent.com/u/58311641?s=128</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/EasyAbp/Abp.AspNetCore.Mvc.UI.Theme.LYear</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/EasyAbp/EShAbp.AspNetCore.Mvc.UI.Theme.LYearop</RepositoryUrl>
+    <PackageTags>abp module easyabp theme</PackageTags>
+    <Company>EasyAbp</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SourceLink.Create.CommandLine" Version="2.8.3" PrivateAssets="All" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ConfigureAwait.Fody" Version="3.3.1" PrivateAssets="All" />
