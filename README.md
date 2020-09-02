@@ -1,1 +1,1 @@
-D:/Codes/HueiFeng/Abp.AspNetCore.Mvc.UI.Theme.LYear/docs/README.md
+/docs/README.md
