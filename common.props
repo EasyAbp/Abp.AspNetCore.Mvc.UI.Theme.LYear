@@ -3,6 +3,14 @@
     <LangVersion>latest</LangVersion>
     <Version>1.0.0</Version>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
-	<AbpProjectType>app</AbpProjectType>
+    <AbpProjectType>app</AbpProjectType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ConfigureAwait.Fody" Version="3.3.1" PrivateAssets="All" />
+    <PackageReference Include="Fody" Version="6.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 </Project>
