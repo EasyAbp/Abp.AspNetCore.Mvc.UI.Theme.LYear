@@ -1,3 +1,4 @@
+using EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear;
 using Localization.Resources.AbpUi;
 using LYearUiSample.EntityFrameworkCore;
 using LYearUiSample.Localization;
@@ -10,7 +11,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System.IO;
-using EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear;
 using Volo.Abp;
 using Volo.Abp.Account.Web;
 using Volo.Abp.AspNetCore.Authentication.JwtBearer;

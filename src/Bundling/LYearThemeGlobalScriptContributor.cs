@@ -1,4 +1,5 @@
-﻿using Volo.Abp.AspNetCore.Mvc.UI.Bundling;
+﻿using System.Linq;
+using Volo.Abp.AspNetCore.Mvc.UI.Bundling;
 
 namespace EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Bundling
 {
@@ -6,10 +7,6 @@ namespace EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Bundling
     {
         public override void ConfigureBundle(BundleConfigurationContext context)
         {
-            context.Files.Add("/themes/lyear/assets/modules/popper.js");
-            context.Files.Add("/themes/lyear/assets/modules/tooltip.js");
-            context.Files.Add("/themes/lyear/assets/modules/nicescroll/jquery.nicescroll.js");
-            context.Files.Add("/themes/lyear/assets/modules/moment.min.js");
         }
     }
 }

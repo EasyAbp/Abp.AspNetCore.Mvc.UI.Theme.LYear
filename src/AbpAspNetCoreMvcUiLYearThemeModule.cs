@@ -39,7 +39,7 @@ namespace EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear
 
             Configure<AbpVirtualFileSystemOptions>(options =>
             {
-                options.FileSets.AddEmbedded<AbpAspNetCoreMvcUiLYearThemeModule>("Abp.AspNetCore.Mvc.UI.Theme.LYear");
+                options.FileSets.AddEmbedded<AbpAspNetCoreMvcUiLYearThemeModule>("EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear");
             });
 
             Configure<AbpToolbarOptions>(options =>
