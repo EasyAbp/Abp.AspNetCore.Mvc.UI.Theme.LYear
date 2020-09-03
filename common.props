@@ -8,7 +8,7 @@
     <Description>A simple ABP Mvc UI theme.</Description>
     <PackageIconUrl>https://avatars3.githubusercontent.com/u/58311641?s=128</PackageIconUrl>
     <PackageProjectUrl>https://github.com/EasyAbp/Abp.AspNetCore.Mvc.UI.Theme.LYear</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/EasyAbp/EShAbp.AspNetCore.Mvc.UI.Theme.LYear</RepositoryUrl>
+    <RepositoryUrl>https://github.com/EasyAbp/Abp.AspNetCore.Mvc.UI.Theme.LYear</RepositoryUrl>
     <PackageTags>abp module easyabp theme</PackageTags>
     <Company>EasyAbp</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
