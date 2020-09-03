@@ -11,7 +11,7 @@
     <!-- logo -->
     <div id="logo" class="sidebar-header">
         <a href="~/">
-            <a style="line-height: 50px;" href="~/">@BrandingProvider.AppName</a>
+            <a style="line-height: 50px;font-weight: bold;" href="~/">@BrandingProvider.AppName</a>
         </a>
     </div>
     <div class="lyear-layout-sidebar-scroll">
@@ -21,11 +21,15 @@
                 @foreach (var menuItem in Model.Items)
                 {
                     var url = string.IsNullOrEmpty(menuItem.Url) ? "#" : Url.Content(menuItem.Url);
+                    var childOepn = LeftNavbarMenuViewComponent.ChildActive(menuItem.Items, PageLayout.Content.MenuItemName) ? "open" : "";
+                    var active = PageLayout.Content.MenuItemName == Model.Name ? "active" : "";
+                    var childActive = LeftNavbarMenuViewComponent.ChildActive(menuItem.Items, PageLayout.Content.MenuItemName) ? "active" : "";
+
                     if (menuItem.IsLeaf)
                     {
                         if (menuItem.Url != null)
                         {
-                            <li class="nav-item nav-item-has-subnav">
+                            <li class="nav-item  @active">
                                 <a href="@url">
                                     <i class="@LeftNavbarMenuViewComponent.ReWriteIcon(menuItem.Name, menuItem.Icon)"></i>@(menuItem.DisplayName)
                                 </a>
@@ -34,7 +38,7 @@
                     }
                     else
                     {
-                        <li class="nav-item nav-item-has-subnav">
+                        <li class="nav-item nav-item-has-subnav @childOepn @childActive">
                             <a href="javascript:void(0)">
                                 <i class="@LeftNavbarMenuViewComponent.ReWriteIcon(menuItem.Name, menuItem.Icon)"></i>@(menuItem.DisplayName)
                             </a>

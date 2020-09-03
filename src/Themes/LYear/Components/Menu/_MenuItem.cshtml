@@ -7,23 +7,26 @@
     var elementId = string.IsNullOrEmpty(Model.ElementId) ? string.Empty : $"id={Model.ElementId}";
     var cssClass = string.IsNullOrEmpty(Model.CssClass) ? string.Empty : Model.CssClass;
     var disabled = Model.IsDisabled ? "disabled" : string.Empty;
+    var open = PageLayout.Content.MenuItemName == Model.Name ? "open" : "";
+    var childOpen = LeftNavbarMenuViewComponent.ChildActive(Model.Items, PageLayout.Content.MenuItemName) ? "open" : "";
+    var url = string.IsNullOrEmpty(Model.Url) ? "#" : Url.Content(Model.Url);
     var active = PageLayout.Content.MenuItemName == Model.Name ? "active" : "";
     var childActive = LeftNavbarMenuViewComponent.ChildActive(Model.Items, PageLayout.Content.MenuItemName) ? "active" : "";
-    var url = string.IsNullOrEmpty(Model.Url) ? "#" : Url.Content(Model.Url);
+
 }
 
 @if (Model.IsLeaf)
 {
     if (Model.Url != null)
     {
-        <li> <a href="@url"><i class="@LeftNavbarMenuViewComponent.ReWriteIcon(Model.Name, Model.Icon)"></i> <span>@Model.DisplayName</span></a> </li>
+        <li class=" @open @active"> <a class="@cssClass @disabled" href="@url" @elementId><i class="@LeftNavbarMenuViewComponent.ReWriteIcon(Model.Name, Model.Icon)"></i> <span>@Model.DisplayName</span></a> </li>
     }
 }
 else
 {
     <ul class="nav nav-subnav">
-        <li class="nav-item nav-item-has-subnav">
-            <a href="@url"><i class="@LeftNavbarMenuViewComponent.ReWriteIcon(Model.Name, Model.Icon)"></i> <span>@Model.DisplayName</span></a>
+        <li class="nav-item nav-item-has-subnav @childOpen">
+            <a id="Menu_@(Model.Name)" href="@url"><i class="@LeftNavbarMenuViewComponent.ReWriteIcon(Model.Name, Model.Icon)"></i> <span>@Model.DisplayName</span></a>
             <ul class="nav nav-subnav">
                 @foreach (var childMenuItem in Model.Items)
                 {

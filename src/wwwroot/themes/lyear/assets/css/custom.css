@@ -13,8 +13,8 @@
     opacity: .5;
 }
 
-.modal-dialog {
-    margin-top: 10%;
+.modal.fade .modal-dialog {
+    margin-top: 20%;
 }
 
 .tab-pane {
