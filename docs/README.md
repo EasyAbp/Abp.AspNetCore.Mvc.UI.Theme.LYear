@@ -1,5 +1,9 @@
 # Abp.AspNetCore.Mvc.UI.Theme.LYear
 
+[![NuGet](https://img.shields.io/nuget/v/EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.svg?style=flat-square)](https://www.nuget.org/packages/EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear)
+[![NuGet Download](https://img.shields.io/nuget/dt/EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.svg?style=flat-square)](https://www.nuget.org/packages/EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear)
+[![GitHub stars](https://img.shields.io/github/stars/EasyAbp/EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear?style=social)](https://www.github.com/EasyAbp/EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear)
+
 A simple ABP MVC UI theme.
 
 ## Online Demo 
