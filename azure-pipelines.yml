@@ -70,7 +70,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      cd samples/LYearUiSample.DbMigrator/LYearUiSample.DbMigrator
+      cd samples/LYearUiSample.DbMigrator
       
       dotnet run
 
