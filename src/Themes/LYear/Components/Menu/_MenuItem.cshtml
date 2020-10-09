@@ -12,19 +12,17 @@
     var url = string.IsNullOrEmpty(Model.Url) ? "#" : Url.Content(Model.Url);
     var active = PageLayout.Content.MenuItemName == Model.Name ? "active" : "";
     var childActive = LeftNavbarMenuViewComponent.ChildActive(Model.Items, PageLayout.Content.MenuItemName) ? "active" : "";
-
 }
 
 @if (Model.IsLeaf)
 {
     if (Model.Url != null)
     {
-        <li class=" @open @active"> <a class="@cssClass @disabled" href="@url" @elementId><i class="@LeftNavbarMenuViewComponent.ReWriteIcon(Model.Name, Model.Icon)"></i> <span>@Model.DisplayName</span></a> </li>
+        <li class="@open @active"> <a class="@cssClass @disabled" href="@url" @elementId><i class="@LeftNavbarMenuViewComponent.ReWriteIcon(Model.Name, Model.Icon)"></i> <span>@Model.DisplayName</span></a> </li>
     }
 }
 else
 {
-    <ul class="nav nav-subnav">
         <li class="nav-item nav-item-has-subnav @childOpen">
             <a id="Menu_@(Model.Name)" href="@url"><i class="@LeftNavbarMenuViewComponent.ReWriteIcon(Model.Name, Model.Icon)"></i> <span>@Model.DisplayName</span></a>
             <ul class="nav nav-subnav">
@@ -34,5 +32,4 @@ else
                 }
             </ul>
         </li>
-    </ul>
 }

@@ -21,7 +21,7 @@
                 @foreach (var menuItem in Model.Items)
                 {
                     var url = string.IsNullOrEmpty(menuItem.Url) ? "#" : Url.Content(menuItem.Url);
-                    var childOepn = LeftNavbarMenuViewComponent.ChildActive(menuItem.Items, PageLayout.Content.MenuItemName) ? "open" : "";
+                    var childOpen = LeftNavbarMenuViewComponent.ChildActive(menuItem.Items, PageLayout.Content.MenuItemName) ? "open" : "";
                     var active = PageLayout.Content.MenuItemName == Model.Name ? "active" : "";
                     var childActive = LeftNavbarMenuViewComponent.ChildActive(menuItem.Items, PageLayout.Content.MenuItemName) ? "active" : "";
 
@@ -31,24 +31,25 @@
                         {
                             <li class="nav-item  @active">
                                 <a href="@url">
-                                    <i class="@LeftNavbarMenuViewComponent.ReWriteIcon(menuItem.Name, menuItem.Icon)"></i>@(menuItem.DisplayName)
+                                        <i class="@LeftNavbarMenuViewComponent.ReWriteIcon(menuItem.Name, menuItem.Icon)"></i>@(menuItem.DisplayName)
                                 </a>
                             </li>
                         }
                     }
                     else
                     {
-                        <li class="nav-item nav-item-has-subnav @childOepn @childActive">
+                        <li class="nav-item nav-item-has-subnav @childOpen @childActive">
                             <a href="javascript:void(0)">
                                 <i class="@LeftNavbarMenuViewComponent.ReWriteIcon(menuItem.Name, menuItem.Icon)"></i>@(menuItem.DisplayName)
                             </a>
-                            @foreach (var childMenuItem in menuItem.Items)
-                            {
-                                @await Html.PartialAsync("~/Themes/LYear/Components/Menu/_MenuItem.cshtml", childMenuItem)
-                            }
+                            <ul class="nav nav-subnav">
+                                @foreach (var childMenuItem in menuItem.Items)
+                                {
+                                    @await Html.PartialAsync("~/Themes/LYear/Components/Menu/_MenuItem.cshtml", childMenuItem)
+                                }
+                            </ul>
                         </li>
                     }
-
                 }
             </ul>
         </nav>
