@@ -4,15 +4,17 @@ using LYearUiSample.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace LYearUiSample.Migrations
 {
     [DbContext(typeof(LYearUiSampleMigrationsDbContext))]
-    partial class LYearUiSampleMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201228123958_UpgradedToAbp402")]
+    partial class UpgradedToAbp402
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
