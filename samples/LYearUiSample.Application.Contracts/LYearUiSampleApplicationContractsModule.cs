@@ -4,6 +4,7 @@ using Volo.Abp.Identity;
 using Volo.Abp.Modularity;
 using Volo.Abp.ObjectExtending;
 using Volo.Abp.PermissionManagement;
+using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
 
 namespace LYearUiSample
@@ -15,6 +16,7 @@ namespace LYearUiSample
         typeof(AbpIdentityApplicationContractsModule),
         typeof(AbpPermissionManagementApplicationContractsModule),
         typeof(AbpTenantManagementApplicationContractsModule),
+        typeof(AbpSettingManagementApplicationContractsModule),
         typeof(AbpObjectExtendingModule)
     )]
     public class LYearUiSampleApplicationContractsModule : AbpModule
