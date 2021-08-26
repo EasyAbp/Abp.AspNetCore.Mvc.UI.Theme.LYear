@@ -44,7 +44,7 @@ namespace LYearUiSample.EntityFrameworkCore
             Configure<AbpDbContextOptions>(options =>
             {
                 /* The main point to change your DBMS.
-                 * See also LYearUiSampleMigrationsDbContextFactory for EF Core tooling. */
+                 * See also LYearUiSampleDbContextFactory for EF Core tooling. */
                 options.UseSqlServer();
             });
         }

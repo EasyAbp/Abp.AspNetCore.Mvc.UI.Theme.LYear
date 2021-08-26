@@ -40,7 +40,7 @@ namespace LYearUiSample.Web
     [DependsOn(
         typeof(LYearUiSampleHttpApiModule),
         typeof(LYearUiSampleApplicationModule),
-        typeof(LYearUiSampleEntityFrameworkCoreDbMigrationsModule),
+        typeof(LYearUiSampleEntityFrameworkCoreModule),
         typeof(AbpAutofacModule),
         typeof(AbpIdentityWebModule),
         typeof(AbpAccountWebIdentityServerModule),

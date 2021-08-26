@@ -42,7 +42,7 @@
     <ProjectReference Include="..\..\src\EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.csproj" />
     <ProjectReference Include="..\LYearUiSample.Application\LYearUiSample.Application.csproj" />
     <ProjectReference Include="..\LYearUiSample.HttpApi\LYearUiSample.HttpApi.csproj" />
-    <ProjectReference Include="..\LYearUiSample.EntityFrameworkCore.DbMigrations\LYearUiSample.EntityFrameworkCore.DbMigrations.csproj" />
+    <ProjectReference Include="..\LYearUiSample.EntityFrameworkCore\LYearUiSample.EntityFrameworkCore.csproj" />
     <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic" Version="$(AbpVersion)" />
     <PackageReference Include="Volo.Abp.Autofac" Version="$(AbpVersion)" />
     <PackageReference Include="Volo.Abp.AspNetCore.Authentication.JwtBearer" Version="$(AbpVersion)" />

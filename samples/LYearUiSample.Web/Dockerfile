@@ -11,7 +11,6 @@ COPY ["samples/LYearUiSample.Web/LYearUiSample.Web.csproj", "samples/LYearUiSamp
 COPY ["samples/LYearUiSample.HttpApi/LYearUiSample.HttpApi.csproj", "samples/LYearUiSample.HttpApi/"]
 COPY ["samples/LYearUiSample.Application.Contracts/LYearUiSample.Application.Contracts.csproj", "samples/LYearUiSample.Application.Contracts/"]
 COPY ["samples/LYearUiSample.Domain.Shared/LYearUiSample.Domain.Shared.csproj", "samples/LYearUiSample.Domain.Shared/"]
-COPY ["samples/LYearUiSample.EntityFrameworkCore.DbMigrations/LYearUiSample.EntityFrameworkCore.DbMigrations.csproj", "samples/LYearUiSample.EntityFrameworkCore.DbMigrations/"]
 COPY ["samples/LYearUiSample.EntityFrameworkCore/LYearUiSample.EntityFrameworkCore.csproj", "samples/LYearUiSample.EntityFrameworkCore/"]
 COPY ["samples/LYearUiSample.Domain/LYearUiSample.Domain.csproj", "samples/LYearUiSample.Domain/"]
 COPY ["src/EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.csproj", "src/"]

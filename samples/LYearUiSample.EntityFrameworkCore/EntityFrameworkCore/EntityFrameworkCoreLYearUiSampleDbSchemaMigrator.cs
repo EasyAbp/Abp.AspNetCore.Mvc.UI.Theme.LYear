@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
+using LYearUiSample.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using LYearUiSample.Data;
 using Volo.Abp.DependencyInjection;
 
 namespace LYearUiSample.EntityFrameworkCore
@@ -20,14 +20,14 @@ namespace LYearUiSample.EntityFrameworkCore
 
         public async Task MigrateAsync()
         {
-            /* We intentionally resolving the LYearUiSampleMigrationsDbContext
+            /* We intentionally resolving the LYearUiSampleDbContext
              * from IServiceProvider (instead of directly injecting it)
              * to properly get the connection string of the current tenant in the
              * current scope.
              */
 
             await _serviceProvider
-                .GetRequiredService<LYearUiSampleMigrationsDbContext>()
+                .GetRequiredService<LYearUiSampleDbContext>()
                 .Database
                 .MigrateAsync();
         }

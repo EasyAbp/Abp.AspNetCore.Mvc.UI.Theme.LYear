@@ -11,7 +11,7 @@ using Volo.Abp.Modularity;
 namespace LYearUiSample.EntityFrameworkCore
 {
     [DependsOn(
-        typeof(LYearUiSampleEntityFrameworkCoreDbMigrationsModule),
+        typeof(LYearUiSampleEntityFrameworkCoreModule),
         typeof(LYearUiSampleTestBaseModule),
         typeof(AbpEntityFrameworkCoreSqliteModule)
         )]
@@ -47,11 +47,11 @@ namespace LYearUiSample.EntityFrameworkCore
             var connection = new SqliteConnection("Data Source=:memory:");
             connection.Open();
 
-            var options = new DbContextOptionsBuilder<LYearUiSampleMigrationsDbContext>()
+            var options = new DbContextOptionsBuilder<LYearUiSampleDbContext>()
                 .UseSqlite(connection)
                 .Options;
 
-            using (var context = new LYearUiSampleMigrationsDbContext(options))
+            using (var context = new LYearUiSampleDbContext(options))
             {
                 context.GetService<IRelationalDatabaseCreator>().CreateTables();
             }

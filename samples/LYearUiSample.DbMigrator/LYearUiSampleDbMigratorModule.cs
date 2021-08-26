@@ -7,7 +7,7 @@ namespace LYearUiSample.DbMigrator
 {
     [DependsOn(
         typeof(AbpAutofacModule),
-        typeof(LYearUiSampleEntityFrameworkCoreDbMigrationsModule),
+        typeof(LYearUiSampleEntityFrameworkCoreModule),
         typeof(LYearUiSampleApplicationContractsModule)
         )]
     public class LYearUiSampleDbMigratorModule : AbpModule

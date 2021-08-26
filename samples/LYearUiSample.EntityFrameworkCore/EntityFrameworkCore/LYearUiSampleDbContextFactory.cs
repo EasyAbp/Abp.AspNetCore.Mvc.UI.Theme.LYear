@@ -7,24 +7,24 @@ namespace LYearUiSample.EntityFrameworkCore
 {
     /* This class is needed for EF Core console commands
      * (like Add-Migration and Update-Database commands) */
-    public class LYearUiSampleMigrationsDbContextFactory : IDesignTimeDbContextFactory<LYearUiSampleMigrationsDbContext>
+    public class LYearUiSampleDbContextFactory : IDesignTimeDbContextFactory<LYearUiSampleDbContext>
     {
-        public LYearUiSampleMigrationsDbContext CreateDbContext(string[] args)
+        public LYearUiSampleDbContext CreateDbContext(string[] args)
         {
             LYearUiSampleEfCoreEntityExtensionMappings.Configure();
 
             var configuration = BuildConfiguration();
 
-            var builder = new DbContextOptionsBuilder<LYearUiSampleMigrationsDbContext>()
+            var builder = new DbContextOptionsBuilder<LYearUiSampleDbContext>()
                 .UseSqlServer(configuration.GetConnectionString("Default"));
 
-            return new LYearUiSampleMigrationsDbContext(builder.Options);
+            return new LYearUiSampleDbContext(builder.Options);
         }
 
         private static IConfigurationRoot BuildConfiguration()
         {
             var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
+                .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../LYearUiSample.DbMigrator/"))
                 .AddJsonFile("appsettings.json", optional: false);
 
             return builder.Build();
