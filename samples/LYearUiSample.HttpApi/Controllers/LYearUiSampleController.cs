@@ -5,7 +5,7 @@ namespace LYearUiSample.Controllers
 {
     /* Inherit your controllers from this class.
      */
-    public abstract class LYearUiSampleController : AbpController
+    public abstract class LYearUiSampleController : AbpControllerBase
     {
         protected LYearUiSampleController()
         {

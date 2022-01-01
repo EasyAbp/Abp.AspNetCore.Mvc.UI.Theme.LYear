@@ -6,6 +6,7 @@ using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
+using Volo.Abp.VirtualFileSystem;
 
 namespace LYearUiSample
 {
@@ -28,6 +29,11 @@ namespace LYearUiSample
                 typeof(LYearUiSampleApplicationContractsModule).Assembly,
                 RemoteServiceName
             );
+            
+            Configure<AbpVirtualFileSystemOptions>(options =>
+            {
+                options.FileSets.AddEmbedded<LYearUiSampleHttpApiClientModule>();
+            });
         }
     }
 }
