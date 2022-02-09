@@ -30,7 +30,7 @@ namespace LYearUiSample
         {
             context.Services.PreConfigure<IMvcBuilder>(builder =>
             {
-                builder.PartManager.ApplicationParts.Add(new AssemblyPart(typeof(LYearUiSampleWebModule).Assembly));
+                builder.PartManager.ApplicationParts.Add(new CompiledRazorAssemblyPart(typeof(LYearUiSampleWebModule).Assembly));
             });
         }
 
